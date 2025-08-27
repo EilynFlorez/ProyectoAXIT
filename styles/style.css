@@ -5,14 +5,15 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: "open sans";
 }
 
 /*Estilos cabecera*/
 header {
     width: 100%;
-    padding: 1.5% 10%;
+    padding: 1.5% 11%;
     display: flex;
-    max-height: 10vh;
+    min-height: 10vh;
     background-color: rgb(0, 0, 0);
     justify-content: space-between;
     align-items: center;
@@ -27,15 +28,19 @@ nav {
     display: flex;
     justify-content: end;
     width: 100%;
-    gap: 6%;
+    gap: 6.5%;
     list-style-type: none;
 }
 .link {
     text-decoration: none;
     color: rgb(186, 186, 186);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 550;
     font-family: "open sans";
+}
+
+.link:hover {
+    color: rgb(145, 143, 143);
 }
 
 /*Estilos sección 1*/
@@ -50,12 +55,1038 @@ nav {
 .fondo-trans {
     display: flex;
     align-items: center;
-    padding: 0% 11%;
-    gap: 15%;
+    padding: 10% 11%;
     width: 100%;
     min-height: 90vh;
     background-color: rgba(0, 0, 0, 0.4);
 }
 .sec1-text {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.text1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.text1 h1 {
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    font-size: 5.6rem;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+}
+.texto-naranja {
+    font-weight: 300;
+    color: rgb(255, 139, 56);
+}
+
+.text1 h2 {
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.linea {
+    width: 16%;
+    height: 2.2px;
+    background-color: rgb(255, 255, 255);
+}
+.text1 p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "open sans";
+    color: rgb(160, 160, 160)
+}
+
+.boton-trans {
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "open sans";
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.cont-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.form {
+    display: flex;
+    font-family: "open sans";
+    flex-direction: column;
+    width: 65%;
+}
+
+.form-tit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 4%;
+    background-color: rgb(245, 245, 245);
+    font-size: 2rem;
+    color: oklch(32.109% 0.00004 271.152);
+}
+.naranja {
+    color: rgb(255, 142, 63);
+}
+.cont-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.cont-input input {
+    width: 80%;
+    border: none;
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.cont-input ::placeholder {
+    color: rgb(198, 198, 198);
+    font-size: 15px;
+}
+.boton-naranja {
+    padding: 5% 0%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    background-color: rgb(255, 155, 81);
+    cursor: pointer;
+}
+
+/*Estilos seccion 2*/
+.seccion2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5% 10%;
+    min-height: 15vh;
+    gap: 5%;
+    background-color: rgb(255, 255, 255);
+    font-family: "open sans";
+    border-bottom: 2px solid rgb(186, 186, 186);
+}
+
+.sec2-text {
+    padding: 1% 0%;
+    width: 35%;
+}
+.sec2-text h6 {
+    font-size: 1.3rem;
+    color: rgb(51, 51, 51);
+}
+.sec2-text p {
+    line-height: 1.5;
+    font-size: 15px;
+    color: rgb(140, 141, 145);
+}
+.sec2-img {
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec2-img img {
+    width: 50px;
+    height: 50px;
+}
+
+/*Estilos seccion 3*/
+.seccion3 {
+    width: 100%;
+    min-height: 88vh;
+    display: flex;
+    padding: 10%;
+    gap: 6%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    font-family: "open sans";
+}
+
+.cont-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.cont-nara {
+    padding: 50px 40px;
+    background-color: rgb(255, 139, 56);
+}
+.tab {
+    padding: 50px 40px;
+    background-color: rgb(51, 51, 51);
+}
+.text-tab {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+.cont-text {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    gap: 50px;
+}
+
+.cont-text h3 {
+    font-size: 1.5rem;
+}
+
+.sec3-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 15.5px;
+    gap: 20px;
+    line-height: 1.5;
+    color: rgb(147, 147, 151);
+}
+.sec3-boton {
+    border: none;
+    padding: 15px 28px;
+    background-color: rgb(255, 139, 56);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*Estilos seccion 4*/
+.seccion4 {
+    display: flex;
+    width: 100%;
+    min-height: 85vh;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+    padding: 8%;
+}
+.sombra-img {
+    box-shadow: 10px 14px 40px rgba(0, 0, 0, 0.2);
+}
+.cont-sec4 {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    gap: 40px;
+    font-family: "open sans";
+}
+.sec4-text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.sec4-text h3 {
+    color: rgb(51, 51, 51);
+    font-size: 1.5rem;
+}
+.linea2 {
+    width: 16%;
+    height: 2.2px;
+    background-color: rgb(255, 139, 56);
+}
+.sec4-text p {
+    font-size: 15px;
+    color: rgb(162, 163, 166);
+}
+.sec4-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.list {
+    display: flex;
+    gap: 8%;
+    width: 100%;
+}
+.list img {
+    width: 40px;
+    height: 40px;
+}
+.text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.text-list h6 {
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.text-list p {
+    color: rgb(162, 163, 166);
+    font-size: 15px;
+}
+
+/*Estilos de la seccion 5*/
+.seccion5 {
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 15%;
+    font-family: "open sans";
+    padding: 8%;
+}
+
+.sec5-text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+
+.sec5-text h3 {
+    font-size: 1.5rem;
+}
+
+.sec5-text p {
+    font-size: 15px;
+    color: rgb(162, 163, 166);
+    line-height: 1.5;
+}
+
+/*Seccion 6*/ 
+.seccion6 {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 8%;
+}
+.sec6-tit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.titulo-seccion {
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-family: "Raleway";
+    text-align: center;
+}
+.sec6-tit p {
+    font-size: 15px;
+    font-family: "open sans";
+    color: rgb(162, 163, 166);
+}
+.cont-article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "open sans";
+    gap: 25px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 25%;
+    text-align: center;
+}
+
+.article h4 {
+    color: rgb(51, 51, 51);
+    font-size: 1.3rem;
+}
+.article p {
+    color: rgb(162, 163, 166);
+}
+
+/*Estilos seccion 7*/
+.seccion7 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 0px;
+    min-height: 130vh;
+    gap: 70px;
+    background-color: rgb(245, 245, 245);
+}
+.sec7-tit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.sec7-tit p {
+    color: rgb(162, 163, 166);
+}
+
+.cont-article2 {
+    display: flex;
+    width: 100%;
+    gap: 4%;
+    justify-content: center;
+    align-items: end;
+    font-family: "open sans";
+}
+.sec7-arti {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-width: 22%;
+}
+.art-tit {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 4% 1%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.art-tit h4 {
+    font-weight: 600;
+}
+
+.precio {
+    font-family: "Raleway";
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 8%;
+}
+.num {
+    font-size: 5rem;
+}
+.italic {
+    font-family: "open sans";
+    color: rgb(162, 163, 166);
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.div-nara {
+    width: 100%;
+    height: 6px;
+    background-color: rgb(255, 139, 56);
+}
+
+.div-nara-info {
+    padding: 3% 0%;
+    background-color: rgb(255, 139, 56);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+}
+.info {
+    color: rgb(162, 163, 166);
+    text-align: center;
+    padding: 4%;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+/*Estilos seccion 8*/ 
+.seccion8 {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+.sec8-text {
+    font-family: "open sans";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.sec8-text p {
+    color: rgb(162, 163, 166);
+}
+.cont-clientes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.clientes {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.clien-text {
+    background-image: url('../images/textBubble.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 150px;
+    color: rgb(162, 163, 166);
+    font-family: "open sans";
+    font-weight: 500;
+    font-style: italic;
+    padding: 5%;
+    text-align: start;
+}
+
+.info-clien img{
+    border-radius: 50%;
+    width: 30%;
+}
+
+.info-clien {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.nombre {
+    font-family: "open sans";
+}
+.nombre h4 {
+    color: rgb(51, 51, 51);
+    font-size: 1.2rem;
+}
+.nombre p {
+    color: rgb(162, 163, 166);
+    font-size: 15px;
+}
+
+/*Estilos de la sección 9*/ 
+.seccion9 {  
+    width: 100%;
+    min-height: 50vh;
+    background-image: url('../images/bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blanco {
+    color: rgb(255, 255, 255);
+}
+
+.fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "open sans";
+    gap: 30px;
+    width: 100%;
+    min-height: 50vh;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fondo div {
+    width: 5%;
+}
+.fondo p {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/*Estilos seccion 10*/ 
+.seccion10 {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 8%;
+    justify-content: center;
+    width: 100%;
+    min-height: 90vh;
+}
+.sec10-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    width: 100%;
+}
+.sec10-text p {
+    color: rgb(162, 163, 166);
+    font-family: "open sans";
+    font-size: 16px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+.content-input10 {
+    width: 100%;
+    display: flex;
+    gap: 6%;
+    justify-content: center;
+    font-family: "open sans";
+}
+
+.inputs {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.inputs input {
+    padding: 1% 2%;
+    border: none;
+    border-bottom: 1.5px solid rgb(198, 198, 198);
+}
+.inputs ::placeholder {
+    color: rgb(198, 198, 198);
+    font-size: 15px;
+}
+.textarea {
+    padding: 1% 2%;
+    width: 40%;
+}
+.textarea textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid rgb(198, 198, 198);
+}
+.textarea ::placeholder {
+    font-family: "open sans";
+    color: rgb(198, 198, 198);
+    font-size: 15px;
+}
+
+.cont-boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*Estilos Footer*/ 
+footer {
+    width: 100%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    min-height: 10vh;
+    color: rgb(162, 163, 166);
+    font-family: "open sans";
+    font-size: 13px;
+    gap: 10px;
+}
+
+@media(max-width: 1279px) {
+    
+    /*Seccion 2*/ 
+    .seccion2 {
+        padding: 0.5% 5%;
+    }
+    .sec2-text {
+        width: 40%;
+    }
+    .sec2-img {
+        width: 50%;
+    }
+    .sec2-img img{
+        width: 40px;
+        height: 40px;
+    }
+
+    /*Seccion 3*/ 
+    .seccion3 {
+        padding: 8%;
+    }
+    .seccion3 img {
+        width: 30%;
+    }
+    .cont-text {
+        gap: 30px;
+    }
+
+    /*Seccion 4*/
+    .seccion4 {
+        gap: 8%;
+        padding: 5%;
+    }
+    .cont-sec4 {
+        width: 50%;
+    }
+    .content-img {
+        width: 40%;
+    }
+    .content-img img {
+        width: 100%;
+    }
+
+    /*Seccion 5*/
+    .sec5-text {
+        width: 40%;
+    }
+
+    /*Seccion 6*/ 
+    .article {
+        width: 30%;
+    }
+
+    /*Seccion 7*/ 
+    .art-tit h4 {
+        font-size: 1rem;
+    }
+    .info {
+        font-size: 14px;
+    }
+
+    /*Seccion 8*/ 
+    .clientes {
+        width: 30%;
+    }
+}
+@media(max-width: 920px) {
+    .titulo-seccion {
+        font-size: 2rem;
+    }
+    /*Seccion 1*/
+    .text1 h1 {
+        font-size: 4rem;
+    }
+    .text1 h2 {
+        font-size: 1.8rem;
+    }
+
+    .form {
+        width: 75%;
+    }
+
+    /*Seccion 2*/
+    .sec2-text {
+        width: 50%;
+    }
+    .sec2-img img{
+        width: 30px;
+        height: 30px;
+    }
+
+    /*Seccion 3*/ 
+    .cont-nara {
+        padding: 40px 30px;
+    }
+    .tab {
+        padding: 40px 30px;
+    }
+    .cont-text {
+        width: 42%;
+    }
+
+    /*Seccion 7*/
+    .sec7-arti {
+        width: 28%;
+    }
+    .num {
+        font-size: 3.5rem;
+    }
+
+    /*Seccion 8*/ 
+    .cont-clientes {
+        gap: 3%;
+    }
+
+    .clientes {
+        width: 32%;
+    }
+
+    .clien-text {
+        padding: 3%;
+    }
+}
+
+@media(max-width: 768px) {
+    /*Header*/
+    header {
+        padding: 2% 11%;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .menu {
+        justify-content: start;
+    }
+
+    /*Seccion 1*/
+    .fondo-trans {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .sec1-text {
+        width: 100%;
+    }
+
+    .cont-form {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    /*Seccion 2*/
+    .seccion2 {
+        padding: 2% 10%;
+        flex-wrap: wrap;
+    }
+    .sec2-text {
+        width: 100%;
+    }
+    .sec2-img {
+        width: 100%;
+    }
+
+    /*Seccion 3*/
+    .seccion3 {
+        padding: 12% 8%;
+    }
+    .seccion3 img{
+        display: none;
+    }
+    .cont-tab {
+        width: 25%;
+    }
+    .text-tab {
+        font-size: 14px;
+    }
+    .cont-text {
+        width: 70%;
+    }
+
+    /*Seccion 4*/
+    .seccion4 {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .content-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .content-img img {
+        width: 60%;
+    }
+
+    .cont-sec4 {
+        width: 80%;
+    }
+
+    /*Seccion 5*/
+    .seccion5 {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .sec5-text {
+        width: 100%;
+    }
+
+    /*Seccion 6*/
+    .cont-article {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .article {
+        width: 45%;
+    }
+
+    /*Seccion 7*/
+    .cont-article2 {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .sec7-arti {
+        width: 60%;
+    }
+
+    /*Seccion 8*/
+    .cont-clientes {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    .clientes {
+        width: 60%;
+    }
+
+    .clien-text {
+        display: flex;
+        align-items: start;
+        padding-bottom: 10%;
+        height: auto;
+    }
+
+    /*Seccion 10*/ 
+    .content-input10 {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .inputs {
+        width: 90%;
+    }
+
+    .textarea {
+        width: 92%;
+    }
+}
+
+@media(max-width: 480px) {
+    /*Header*/
+    header {
+        gap: 15px;
+        padding: 5% 5%;
+    }
+    header img {
+        height: 25px;
+    }
+
+    nav {
+        border-top: 1.5px solid rgb(47, 46, 46);
+    }
+    .menu {
+        gap: 5%;
+    }
+    .link {
+        font-size: 14px;
+    }
+
+    /*Seccion 1*/
+    .form {
+        width: 95%;
+    }
+
+    /*Seccion 2*/
+    .seccion2 {
+        padding: 6%;
+        gap: 20px;
+    }
+    .sec2-text {
+        width: 100%;
+    }
+    .sec2-img {
+        width: 100%;
+    }
+
+    /*Seccion 3*/
+    .seccion3 {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cont-tab {
+        width: 100%;
+        padding: 2%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cont-text {
+        width: 80%;
+    }
+    .cont-nara {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        width: 80px;
+        height: 80px;
+    }
+    .tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        width: 80px;
+        height: 80px;
+    }
+
+    /*Seccion 6*/
+    .seccion6 {
+        gap: 50px;
+    }
+    .article {
+        width: 100%;
+    }
+
+    /*Seccion 7*/
+    .seccion7 {
+        padding: 30% 8%;
+        text-align: center;
+    }
+
+    .sec7-arti {
+        width: 85%;
+    }
+
+    /*Seccion 8*/
+    .seccion8 {
+        padding: 15% 8%;
+        text-align: center;
+    }
+    .clientes {
+        width: 80%;
+    }
+
+    footer {
+        padding: 4%;
+    }
+    footer img {
+        height: 20px;
+    }
 }
